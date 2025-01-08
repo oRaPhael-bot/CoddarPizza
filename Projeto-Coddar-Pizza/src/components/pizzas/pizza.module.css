@@ -1,0 +1,97 @@
+.cardapio_title {
+  text-transform: uppercase;
+  height: 28px;
+  margin-top: 32px;
+  margin-bottom: 27px;
+  color: #b30733;
+  letter-spacing: 0px;
+}
+
+.cardapio_title h4 {
+  font-weight: bold;
+}
+
+.cardapio_item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-decoration: none;
+  border: 1px solid #2e476533;
+  border-radius: 0px 0px 20px 20px;
+  width: 410px;
+  padding: 0;
+  color: #b30733;
+}
+
+.pizza_img {
+  display: block;
+  /* background-image: url("../../assets/img/sabor_casa.png"); */
+  width: 410px;
+  height: 154px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.pizza_img img {
+  display: block;
+  width: 327px;
+  border-radius: 10px;
+}
+
+.pizza_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.text_pizza {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .pizza_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pizza_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cardapio_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .pizza_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pizza_img {
+    width: 300px;
+  }
+
+  .cardapio_item {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pizza_container {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
